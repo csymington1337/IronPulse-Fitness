@@ -27,39 +27,45 @@
     </head>
 
     <body>
-        <!---------HEADER---------->
-        <section id="header">
-            <div class="header content-wrapper">
-                <div class="nav-bar">
-                    <div class="brand"><img src="img/logo-large.png" alt="IronPulse Fitness Logo"></div>
-                    <div class="nav-links">
-                        <div class="hamburger">
-                            <div class="bar"></div>
-                        </div>
-                        <ul>
-                            <li><a href="index.html" data-after="Home">Home</a></li>
-                            <li><a href="membership.html" data-after="Membership">Membership</a></li>
-                            <li><a href="classes.html" data-after="Classes">Classes</a></li>
-                            <li><a href="training.html" data-after="Training">Training</a></li>
-                            <li><a href="nutrition.html" data-after="Nutrition">Nutrition</a></li>
-                            <li><a href="gallery.html" data-after="Gallery">Gallery</a></li>
-                            <li><a href="about.html" data-after="About">About</a></li>
-                            <li><a href="contact.html" data-after="Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <header>
+            <!---------HEADER---------->
+            <section id="header">
+                <div class="header-container">
+                    <div class="nav-bar">
+                        <div class="brand"><img src="img/logo-largewhite.png" alt="IronPulse Fitness Logo"></div>
+                        <div class="nav-links">
+                            <div class="hamburger">
+                                <div class="bar"></div>
+                            </div><!--hamburger ends-->
+                            <ul>
+                                <li><a href="index.html" data-after="Home">Home</a></li>
+                                <li><a href="membership.html" data-after="Membership">Membership</a></li>
+                                <li><a href="classes.html" data-after="Classes">Classes</a></li>
+                                <li><a href="training.html" data-after="Training">Training</a></li>
+                                <li><a href="nutrition.html" data-after="Nutrition">Nutrition</a></li>
+                                <li><a href="gallery.html" data-after="Gallery">Gallery</a></li>
+                                <li><a href="about.html" data-after="About">About</a></li>
+                                <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                            </ul>
+                        </div><!--nav-links ends-->
+                    </div><!--nav-bar ends-->
+                </div><!--header-container ends-->
+            </section>
+        </header>
 
         <main>
-
+        
             <!---------HERO---------->
             <section id="hero">
                 <div class="hero-container">
-                    <img src="img/man-overheadpress.jpg">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/man-overheadpress.jpg" alt="Athlete training">
+                        <source media="(min-width: 480px)" srcset="img/man-battleropes.jpg" alt="Athlete training">
+                        <img src="img/woman-mountainclimbers.jpg" alt="Athlete training">
+                    </picture>
                     <div class="hero-text">
-                            <h2>Find your power</h2>
-                            <h2>Keep the pulse</h2>
+                        <h1>Find your power</h1>
+                        <h1>Keep the pulse</h1>
                     </div><!--Hero-text ends-->
                 </div> <!-- Hero content-wrapper ends -->
             </section>
@@ -67,15 +73,16 @@
             <!---------MEMBERSHIP---------->
             <section id="membership">
                 <div class="membership-container">
+                    <h1 class="membership-heading">Memberships built for momentum</h1>
                     <ul>
-                        <li>High-Performance Equipment</li>
-                        <li>Diverse Training Options</li>
-                        <li>Progress Tracking Tools</li>
-                        <li>Personalized Training Programs</li>
-                        <li>Expert Coaching and Support</li>
-                        <li>Recovery and Wellness Focus</li>
-                        <li>Online Resources and Tools</li>
-                        <li>Inclusive Fitness Community</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">High-Performance Equipment</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Diverse Training Options</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Progress Tracking Tools</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Personalized Training Programs</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Expert Coaching and Support</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Recovery and Wellness Focus</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Online Resources and Tools</li>
+                        <li><img src="img/check-mark1.png" alt="Checkmark Icon">Inclusive Fitness Community</li>
                     </ul>
                     <a href="memberships.html" type="button" class="btn">See membership options</a>
                     <a href="contact.html" type="button" class="btn">Get a free trial</a>
@@ -85,10 +92,12 @@
             <!---------CLASSES---------->
             <section id="classes">
                 <div class="classes-container">
-
+                    <div class="classes-heading">
+                        <h2>Classes</h2>
+                    </div><!--classes-heading ends-->
                     <div class="classes-item">
                         <div class="classes-photo">
-                            <img src="img/yoga.jpg" alt="People doing yoga">
+                            <img src="img/class-yoga.jpg" alt="People doing yoga">
                         </div><!--classes-photo ends-->
                         <div class="classes-text">
                             <h3>Balance</h3>
@@ -98,7 +107,7 @@
 
                     <div class="classes-item">
                         <div class="classes-photo">
-                            <img src="img/pilatesclass.jpg" alt="Three people doing pilates">
+                            <img src="img/class-pilates.jpg" alt="Three people doing pilates">
                         </div><!--classes-photo ends-->
                         <div class="classes-text">
                             <h3>Strength</h3>
@@ -108,17 +117,17 @@
 
                     <div class="classes-item">
                         <div class="classes-photo">
-                            <img src="img/boxing.jpg" alt="A boxing coach with a woman">
+                            <img src="img/class-boxing.jpg" alt="A boxing coach with a woman">
                         </div><!--classes-photo ends-->
                         <div class="classes-text">
                             <h3>Impact</h3>
-                            <p>Power. Precision. Pulse</p>
+                            <p>Power. Precision. Pulse.</p>
                         </div><!--classes-text ends-->
                     </div><!--classes-item ends-->
 
                     <div class="classes-item">
                         <div class="classes-photo">
-                            <img src="img/spin.jpg" alt="Yoga class">
+                            <img src="img/class-spin.jpg" alt="Yoga class">
                         </div><!--classes-photo ends-->
                         <div class="classes-text">
                             <h3>Drive</h3>
@@ -133,29 +142,32 @@
             <!---------TRAINING---------->
             <section id="training">
                 <div class="training-container">
+                    <h2>Training</h2>
                     <div class="training-photo">
                         <img src="img/PT.jpg" alt="A personal trainer working with a client">
                     </div><!--training-photo ends-->
                     <div class="training-text">
-                        <h2>Your goals. Our mission.</h2>
+                        <h3>Your goals. Our mission.</h3>
                         <p>Our certified coaches tailor every session to your goals, your pace, and your power.</p>
                     </div><!--training-text ends-->
                     <a href="training.html" type="button" class="btn">Explore training plans</a>
                     <a href="contact.html" type="button" class="btn">Try a demo workout</a>
                 </div><!--training-container ends-->
             </section>
+        </main>
 
+        <footer>
             <!---------FOOTER---------->
             <section id="footer">
                 <div class="footer-container">
                     <div class="footer brand">
-                        <img src="img/logo2-large.png" alt="IronPulse Logo">
+                        <img src="img/logo2-largewhite.png" alt="IronPulse Logo">
                         <h1>Keep the pulse</h1>
                         <div class="social-links">
                             <ul>
-                                <li><a href="https://www.facebook.com/" data-after="IronPulse Fitness on Facebook"><img src="img/facebook-brands-solid-full.png" alt="Facebook Icon"></a></li>
-                                <li><a href="https://www.instagram.com/" data-after="IronPulse Fitness on Instagram"><img src="img/instagram-brands-solid-full.svg" alt="Instagram Icon"></a></li>
-                                <li><a href="https://www.x.com/" data-after="IronPulse Fitness on X"><img src="img/x-twitter-brands-solid-full.svg" alt="X Icon"></a></li>
+                                <li><a href="https://www.facebook.com/" data-after="IronPulse Fitness on Facebook"><img src="img/facebook-light.png" alt="Facebook Icon"></a></li>
+                                <li><a href="https://www.instagram.com/" data-after="IronPulse Fitness on Instagram"><img src="img/instagram-light.png" alt="Instagram Icon"></a></li>
+                                <li><a href="https://www.x.com/" data-after="IronPulse Fitness on X"><img src="img/x-twitter-light.png" alt="X Icon"></a></li>
                             </ul>
                         </div><!--social-links ends-->
                     </div><!--footer brand ends-->
@@ -177,7 +189,8 @@
                     </div>
                 </div><!--footer-container ends-->
             </section>
-
-        </main>
+        </footer>
+            
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
