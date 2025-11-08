@@ -103,8 +103,6 @@ html {
 }
  
 body {
-  
-  
   font-size: 1em;
   overflow-x: hidden;
   min-width: 100%;
@@ -139,8 +137,14 @@ ul li {
   list-style-type: none;
 }
 
+.CTA-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .btn {
-  align-items: center;
+  text-align: center;
   background-color: #ff0000;
   color: #fff;
   display: inline-block;
@@ -153,12 +157,6 @@ ul li {
   transition: 0.3s ease;
   transition-property: background-color, color;
 }
-
-/* scrollbar styles */
-
-
-
-/* scrollbar styles end */
 
 /*MOBILE STYLES*/
 
@@ -520,17 +518,13 @@ ul li {
 }
 
 #footer .brand h1 {
+  text-align: center;
   font-size: 1.5rem;
   line-height: 3rem;
   color: #666;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-transform: uppercase;
   padding: 5vh 0 2vh 0;
-}
-
-#footer .social-links {
-  width: 100vw;
-  object-fit: stretch;
 }
 
 #footer .social-links ul {
@@ -544,10 +538,6 @@ ul li {
   width: 20px;
 }
 
-#footer .footer-links ul {
-  display: none;
-}
-
 #footer .copyright {
   text-align: center;
   padding-bottom: 30px;
@@ -557,4 +547,112 @@ ul li {
   color: #111;
   font-size: 0.6rem;
   line-height: 0.85rem;
+}
+@media only screen and (min-width: 480px) {
+  /*TABLET STYLES*/
+
+  body {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .CTA-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin: 20px;
+    padding: 10px 20px;
+  }
+
+  /*header styles*/
+
+  #header .nav-bar {
+    justify-content: center;
+  }
+
+  #header .brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #header .nav-links {
+    margin-left: auto;
+  }
+
+  /*hero styles*/
+
+  #hero .hero-text {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  /*membership styles*/
+
+  .membership-heading {
+    font-size: 3rem;
+    padding: 0.8em 1.8em 0.8em 1.2em;
+    letter-spacing: 0.7px;
+  }
+
+  #membership .membership-container h1 {
+    text-align: center;
+  }
+
+  #membership .membership-container ul {
+    padding: 8% 0 0 0;
+  }
+
+  #membership .membership-container ul li {
+    display: flex;
+    flex-direction: row;
+    font-size: 4vw;
+    line-height: 3.5rem;
+    gap: 0.5rem;
+  }
+
+  #membership .membership-container ul li img {
+    height: 20px;
+    width: 20px;
+    flex: 0 0 auto;
+    align-self: center;
+  }
+
+  /*classes styles*/
+
+  #classes .classes-container > .classes-item {       
+    height: 250px;
+  }
+
+  #classes .classes-container .classes-text p {
+    line-height: 1.5rem;
+  }
+
+  /*training styles*/
+
+  #training .training-text p {
+    line-height: 1.5rem;
+  }
+
+  /*footer styles*/
+
+  #footer .brand {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0;
+  }
+
+  #footer .social-links ul {
+    justify-content: space-around;
+  }
+
 }
