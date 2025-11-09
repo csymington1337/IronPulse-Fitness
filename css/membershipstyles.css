@@ -530,6 +530,8 @@ ul li {
   clip-path: polygon(0 0, 80% 0, 97% 50%, 80% 100%, 0 100%);
 }
 
+/*footer styles*/
+
 #footer {
   background-color: #000;
   margin-top: 40px;
