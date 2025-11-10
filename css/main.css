@@ -369,11 +369,11 @@ ul li {
 #membership .membership-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .membership-heading {
-  display: inline-block;
+  display: block;
   background: #ff0000;
   color: #fff;
   font-weight: 700;
@@ -383,6 +383,7 @@ ul li {
   clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
   box-shadow: 4px 4px 0 #000;
   letter-spacing: 0.7px;
+  width: 95%;
 }
 
 #membership .membership-container h1 {
@@ -391,6 +392,7 @@ ul li {
 
 #membership .membership-container ul {
   padding: 8% 0 0 0;
+  align-self: center;
 }
 
 #membership .membership-container ul li {
@@ -405,6 +407,10 @@ ul li {
   height: 20px;
   width: 20px;
   flex: 0 0 auto;
+  align-self: center;
+}
+
+#membership .CTA-buttons {
   align-self: center;
 }
 
