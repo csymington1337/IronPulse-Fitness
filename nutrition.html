@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta name="description" content="IronPulse Fitness">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>IronPulse Fitness | Gym and Wellness Center</title>
+
+            <meta name="description" content="Fitness Community">
+
+            <meta property="og:title" content="IronPulse Fitness | Gym and Wellness Center">
+            <meta property="og:type" content="website">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/nutritionstyles.css">
+    </head>
+
+    <body>
+
+    <header>
+        <!---------HEADER---------->
+        <section id="header">
+            <div class="header-container">
+                <div class="nav-bar">
+                    <div class="brand"><img src="img/logo-largewhite.png" alt="IronPulse Fitness Logo"></div>
+                        <div class="nav-links">
+                            <div class="hamburger">
+                                <div class="bar"></div>
+                        </div><!--hamburger ends-->
+                        <ul>
+                            <li><a href="index.html" data-after="Home">Home</a></li>
+                            <li><a href="membership.html" data-after="Membership">Membership</a></li>
+                            <li><a href="classes.html" data-after="Classes">Classes</a></li>
+                            <li><a href="training.html" data-after="Training">Training</a></li>
+                            <li><a href="nutrition.html" data-after="Nutrition">Nutrition</a></li>
+                            <li><a href="gallery.html" data-after="Gallery">Gallery</a></li>
+                            <li><a href="about.html" data-after="About">About</a></li>
+                            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                        </ul>
+                    </div><!--nav-links ends-->
+                </div><!--nav-bar ends-->
+            </div><!--header-container ends-->
+        </section>
+    </header>
+
+    <main>
+        <!-----HEADING------>
+
+        <section id="heading">
+            <div class="heading-container">
+                <div class="heading-photo">
+                    <img src="img/fruit.jpg" alt="A bowl of fruit">
+                </div>
+                <div class="heading-text">
+                    <h2>Fuel Your Pulse</h2>
+                    <p>True performance starts with what powers you. At IronPulse, our nutrition guidance helps you build strength from the inside out — with balanced plans, expert advice, and sustainable habits that support your goals in and out of the gym. Because lasting results aren't just trained — they're fueled.</p>
+                </div>
+            </div><!--heading-container ends-->
+        </section>
+
+        <!--------CALORIE CALCULATOR---------->
+
+        <section id="calculator">
+            <div class="calculator-container">
+                <h3>Daily Calorie Calculator</h3>
+                <p>Calculate your daily calorie needs based on your profile</p>
+
+                <p><span>* All formulas are estimates. It is best to use a formula as a starting point and adjust your calorie intake based on actual weight changes over a few weeks.</span></p>
+                        
+                <p><span>** For personalized and safe guidance, especially if you have health conditions or extreme fitness goals, consult a registered dietitian or healthcare professional.</span></p>
+                
+                <div class="calculator-form">
+
+                    <!-- Gender Toggle -->
+                    <div class="form-group">
+                        <label>Sex</label>
+                        <div class="toggle-container">
+                            <button class="toggle-btn active" data-sex="male">Male</button>
+                            <button class="toggle-btn" data-sex="female">Female</button>
+                        </div><!--toggle-container ends-->
+                    </div><!--form-group ends-->
+
+                    <!-- Units Toggle -->
+                    <div class="form-group">
+                        <label>Units</label>
+                        <div class="toggle-container">
+                            <button class="toggle-btn active" data-units="metric">Metric</button>
+                            <button class="toggle-btn" data-units="imperial">Imperial</button>
+                        </div><!--toggle-container ends-->
+                    </div><!--form-group ends-->
+
+                    <!-- Age Input -->
+                    <div class="form-group">
+                        <label for="age">Age (years)</label>
+                        <input type="number" id="age" placeholder="Enter your age" min="15" max="100">
+                    </div><!--form-group ends-->
+
+                    <!-- Height Input -->
+                    <div class="form-group">
+                        <label>Height</label>
+                        <!-- Metric (single field) -->
+                        <div id="height-metric">
+                            <input type="number" id="height-cm" placeholder="Enter height in cm" step="0.1">
+                        </div><!--height-metric ends-->
+
+                        <!-- Imperial (two fields) -->
+                        <div id="height-imperial">
+                            <div class="height-imperial-inputs">
+                                <div class="height-input-group">
+                                    <input type="number" id="height-feet" placeholder="Feet" min="0" max="8">
+                                    <span>ft</span>
+                                </div><!--height-input-group ends-->
+                                <div class="height-input-group">
+                                    <input type="number" id="height-inches" placeholder="Inches" min="0" max="11" step="0.1">
+                                    <span>in</span>
+                                </div><!--height-input-group ends-->
+                            </div><!--height-imperial-inputs ends ends-->
+                        </div><!--height-imperial ends-->
+                    </div><!--form-group ends-->
+
+                    <!-- Weight Input -->
+                    <div class="form-group">
+                        <label for="weight">Weight (<span id="weight-unit">kg</span>)</label>
+                        <input type="number" id="weight" placeholder="Enter your weight" step="0.1">
+                    </div><!--form-group ends-->
+
+                    <!-- Activity Level Dropdown -->
+                    <div class="form-group">
+                        <label for="activity">Activity Level</label>
+                        <select id="activity">
+
+                            <option value="">Select your activity level</option>
+                            <option value="1.2">Sedentary (little or no exercise)</option>
+                            <option value="1.375">Lightly Active (exercise 1-3 days/week)</option>
+                            <option value="1.55">Moderately Active (exercise 3-5 days/week)</option>
+                            <option value="1.725">Very Active (exercise 6-7 days/week)</option>
+                            <option value="1.9">Extra Active (very intense exercise daily)</option>
+
+                        </select>
+                    </div><!--form-group ends-->
+
+                    <!-- Calculate Button -->
+                    <button class="calculate-btn" id="calculate">Calculate</button>
+
+                    <!-- Result Display -->
+                    <div class="result" id="result">
+
+                        <h4>Your Daily Calorie Needs</h4>
+                        <p class="calorie-value"><span id="calories">0</span> calories/day</p>
+                        <p class="bmr-value">BMR: <span id="bmr">0</span> calories/day</p>
+
+                    </div><!--result ends-->
+                </div><!--calculator-form ends-->
+            </div><!--calculator-container ends-->
+        </section>
+
+        <!-----MACROS------>
+
+        <section id="macros">
+            <div class="macros-container">
+                <div class="macros-heading">
+                <h3>Master Your Macros</h3>
+                    <div class="macros-heading-text">
+                        <p>Every goal starts with balance — and that balance begins with macronutrients: protein, carbohydrates, and fats. The way you combine these three fuels determines how your body performs, recovers, and changes over time. For <span>weight loss</span>, reducing calories while keeping protein high preserves lean muscle and boosts metabolism. For <span>weight gain</span>, increasing overall calories with a balance of protein and complex carbs helps build muscle and strength without excess fat. To <span>maintain</span>, the goal is equilibrium — enough energy to sustain training and recovery while keeping body composition stable. For <span>performance</span>, the focus shifts toward fueling output: more carbs for endurance, steady protein for repair, and healthy fats for long-lasting energy. When your macros match your mission, your results follow.</p>
+                    </div><!--macros-heading-text ends-->
+                </div><!--macros-heading ends-->
+
+                <div class="macro-splits">                
+                    <h4>Recommended Macro Splits:</h4>
+                    
+                    <table class="macro-table">
+                        <thead>
+                            <tr><!--table heading row-->
+                                <th>Goal</th>
+                                <th>Protein</th>
+                                <th>Carbs</th>
+                                <th>Fat</th>
+                            </tr><!--table heading row ends-->
+                        </thead>
+                        <tbody>
+                            <tr><!--weight loss row-->
+                                <td>Weight Loss</td>
+                                <td>40%</td>
+                                <td>30%</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr><!--weight gain row-->
+                                <td>Weight Gain</td>
+                                <td>30%</td>
+                                <td>50%</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr><!--maintenance row-->
+                                <td>Maintenance</td>
+                                <td>33%</td>
+                                <td>33%</td>
+                                <td>33%</td>
+                            </tr>
+                            <tr><!--performance row-->
+                                <td>Performance</td>
+                                <td>25%</td>
+                                <td>55%</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--macro-splits ends-->
+            </div><!--macros-container ends-->
+        </section>
+
+    </main>
+            
+    <footer>
+        <!---------FOOTER---------->
+        <section id="footer">
+            <div class="footer-container">
+                <div class="footer brand">
+                    <img src="img/logo2-largewhite.png" alt="IronPulse Logo">
+                    <div class="social-links">
+                        <h1>Keep the pulse</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/" data-after="IronPulse Fitness on Facebook"><img src="img/facebook-light.png" alt="Facebook Icon"></a></li>
+                            <li><a href="https://www.instagram.com/" data-after="IronPulse Fitness on Instagram"><img src="img/instagram-light.png" alt="Instagram Icon"></a></li>
+                            <li><a href="https://www.x.com/" data-after="IronPulse Fitness on X"><img src="img/x-twitter-light.png" alt="X Icon"></a></li>
+                        </ul>
+                    </div><!--social-links ends-->
+                </div><!--footer brand ends-->
+                <div class="copyright">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Christina Symington</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div><!--footer-container ends-->
+        </section>
+    </footer>
+              
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
