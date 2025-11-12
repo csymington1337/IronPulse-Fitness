@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="IronPulse Fitness">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IronPulse Fitness | Gym and Wellness Center</title>
+
+        <meta name="description" content="Fitness Community">
+
+        <meta property="og:title" content="IronPulse Fitness | Gym and Wellness Center">
+        <meta property="og:type" content="website">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/contactstyles.css">
+    </head>
+
+    <body>
+
+    <header>
+        <!---------HEADER---------->
+        <section id="header">
+            <div class="header-container">
+                <div class="nav-bar">
+                    <div class="brand"><img src="img/logo-largewhite.png" alt="IronPulse Fitness Logo"></div>
+                        <div class="nav-links">
+                            <div class="hamburger">
+                                <div class="bar"></div>
+                        </div><!--hamburger ends-->
+                        <ul>
+                            <li><a href="index.html" data-after="Home">Home</a></li>
+                            <li><a href="membership.html" data-after="Membership">Membership</a></li>
+                            <li><a href="classes.html" data-after="Classes">Classes</a></li>
+                            <li><a href="training.html" data-after="Training">Training</a></li>
+                            <li><a href="nutrition.html" data-after="Nutrition">Nutrition</a></li>
+                            <li><a href="about.html" data-after="About">About</a></li>
+                            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                        </ul>
+                    </div><!--nav-links ends-->
+                </div><!--nav-bar ends-->
+            </div><!--header-container ends-->
+        </section>
+    </header>
+
+    <main>
+        <!-----HEADING------>
+
+        <section id="heading">
+            <div class="heading-container">
+                <h2>Have questions?</h2>
+                <p>We're always here to help. Whether you're curious about memberships, classes, or getting started, our team is ready to point you in the right direction.</p>
+            </div><!--heading-container ends-->
+        </section>
+        
+        <!-----CONTACT FORM------>
+
+        <section id="contact-form">
+            <div class="contact-form-container">
+                <form id="contact" action="" method="post">
+                    <h3>Get in Touch</h3>
+
+                    <div class="form-group">
+                        <label for="reason">What can we help you with? <span>*</span></label>
+                        <select id="reason" name="reason" required>
+                            <option value="">Select an option</option>
+                            <option value="free-trial">Free trial membership</option>
+                            <option value="training-demo">Training demo session</option>
+                            <option value="class-schedules">Class schedules</option>
+                            <option value="membership-changes">Membership upgrades or changes</option>
+                            <option value="billing">Billing or payment questions</option>
+                            <option value="corporate">Corporate partnerships</option>
+                            <option value="technical">Technical or account issues</option>
+                            <option value="feedback">General feedback or suggestions</option>
+                        </select>
+                    </div><!--form-group ends-->
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                          <label for="first-name">First Name <span>*</span>
+                          </label>
+                          <input type="text" id="first-name" name="first-name" required>
+                        </div><!--form-group ends-->
+                        
+                        <div class="form-group">
+                            <label for="last-name">Last Name <span>*</span></label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div><!--form-group ends-->
+                    </div><!--form-row ends-->
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div><!--form-group ends-->
+                      
+                        <div class="form-group">
+                          <label for="phone">Phone</label>
+                          <input type="tel" id="phone" name="phone">
+                        </div><!--form-group ends-->
+                    </div><!--form-row ends-->
+                    
+                    <div class="form-group">
+                        <label>Are you a current member? <span>*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="member" value="yes" required>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="member" value="no" required>
+                                <span>No</span>
+                            </label>
+                        </div><!--radio-group ends-->
+                    </div><!--form-group ends-->                
+                    
+                    <div class="form-group">
+                        <label for="goal">Primary fitness goal <span>*</span></label>
+                        <select id="goal" name="goal">
+                            <option value="">Select an option</option>
+                            <option value="muscle">Build muscle/strength</option>
+                            <option value="weight-loss">Weight loss</option>
+                            <option value="athletic">Improve athletic performance</option>
+                            <option value="health">Improve overall health</option>
+                            <option value="community">Community</option>
+                        </select>
+                    </div><!--form-group ends-->
+                    
+                    <div class="form-group">
+                        <label for="message">Message <span>*</span></label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div><!--form-group ends-->
+                    
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div><!--contact-form-container ends-->
+        </section>
+
+        <!-----CONTACT INFO------>
+
+        <section id="contact-info">
+            <div class="contact-info-container">
+                <div class="contact-info-heading">
+                    <h2>Let's Connect.</h2>
+                    <p>Whether you're ready to start your fitness journey or just want to learn more, our team is always happy to chat. Reach out today — your next pulse starts here.</p>
+                </div><!--contact-info-heading ends-->
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="img/icons8-phone-100.png" alt="Phone Icon">
+                        <p><a href="tel:5555555555">555-555-5555</a></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <img src="img/icons8-envelope-100.png" alt="Envelope Icon">
+                        <p><a href="mailto:email@notarealgym.com">email@notarealgym.com</a></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <img src="img/icons8-location-100.png" alt="Location Pin Icon">
+                        <p>201 - 11962 104 Avenue NW<br>Edmonton, AB T5K 0G6</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <img src="img/icons8-clock-128.png" alt="Clock Icon">
+                        <p>Mon - Fri: 6:00 AM - 11:00 PM<br>
+                        Sat - Sun: 8:00 AM - 8:00 PM</p>
+                    </div>
+
+                    <div class="contact-item map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.0945869847346!2d-113.50518842348625!3d53.55519597235818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224c35866f3f%3A0x3e0a5b5c5e5c5e5c!2s201%20-%2011962%20104%20Ave%20NW%2C%20Edmonton%2C%20AB%20T5K%200G6!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div><!--contact-details ends-->
+            </div><!--contact-info-container ends-->
+        </section>
+
+    </main>
+            
+    <footer>
+        <!---------FOOTER---------->
+        <section id="footer">
+            <div class="footer-container">
+                <div class="footer brand">
+                    <img src="img/logo2-largewhite.png" alt="IronPulse Logo">
+                    <div class="social-links">
+                        <h1>Keep the pulse</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/" data-after="IronPulse Fitness on Facebook"><img src="img/facebook-light.png" alt="Facebook Icon"></a></li>
+                            <li><a href="https://www.instagram.com/" data-after="IronPulse Fitness on Instagram"><img src="img/instagram-light.png" alt="Instagram Icon"></a></li>
+                            <li><a href="https://www.x.com/" data-after="IronPulse Fitness on X"><img src="img/x-twitter-light.png" alt="X Icon"></a></li>
+                        </ul>
+                    </div><!--social-links ends-->
+                </div><!--footer brand ends-->
+                <div class="copyright">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Christina Symington</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div><!--footer-container ends-->
+        </section>
+    </footer>
+              
+    <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
